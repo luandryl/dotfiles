@@ -6,57 +6,48 @@ Xft.autohint: false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-XTerm*background: #c5c8c6
-XTerm*foreground: #657b83
-XTerm*pointerColor: #16A085
-XTerm*faceName: Fixed
-XTerm*faceSize: 11
+######################################################################
 
-*background:                      #c5c8c6
-*foreground:                      #657b83
-*fading:                          15
-*fadeColor:                       black
-*cursorColor:                     #16A085
-*pointerColorBackground:          #2B2C2B
-*pointerColorForeground:          #16A085
+! special
+*.foreground:   #d3d0c8
+*.background:   #2d2d2d
+*.cursorColor:  #d3d0c8
 
-!! black dark/light
-*color0:                          #232423
-*color8:                          #282928
+! black
+*.color0:       #2d2d2d
+*.color8:       #747369
 
-!! red dark/light
-*color1:                          #BA2922
-*color9:                          #CC372C
+! red
+*.color1:       #f2777a
+*.color9:       #f2777a
 
-!! green dark/light
-*color2:                          #7E807E
-*color10:                         #8D8F8D
+! green
+*.color2:       #99cc99
+*.color10:      #99cc99
 
-!! yellow dark/light
-*color3:                          #4C4F4D
-*color11:                         #4E524F
+! yellow
+*.color3:       #ffcc66
+*.color11:      #ffcc66
 
-!! blue dark/light
-*color4:                          #16A085
-*color12:                         #13BF9D
+! blue
+*.color4:       #6699cc
+*.color12:      #6699cc
 
-!! magenta dark/light
-*color5:                          #43746A
-*color13:                         #487D72
+! magenta
+*.color5:       #cc99cc
+*.color13:      #cc99cc
 
-!! cyan dark/light
-*color6:                          #00CCCC
-*color14:                         #00D1D1
+! cyan
+*.color6:       #66cccc
+*.color14:      #66cccc
 
-!! white dark/light
-*color7:                          #E0E0E0
-*color15:                         #E8E8E8
+! white
+*.color7:       #d3d0c8
+*.color15:      #f2f0ec
 
-Xcursor.theme: xcursor-breeze
-Xcursor.size:                     0
 
-XTerm*background:                 #c5c8c6
-XTerm*foreground:                 #657b83
+
+######################################################################
 XTerm*reverseVideo:               on
 XTerm*faceName:                   Terminus:size=11:antialias=true
 XTerm*selectToClipboard:          true
@@ -75,46 +66,9 @@ URxvt.depth:                      32
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
-URxvt*background:                 black
-URxvt*foreground:                 grey
 URxvt*saveLines:                  5000
 
 ###############################################################
-URxvt*foreground:   #c5c8c6
-URxvt*background:   #1d1f21
-URxvt*cursorColor:  #c5c8c6
-
-! black
-URxvt*color0:       #282a2e
-URxvt*color8:       #373b41
-
-! red
-URxvt*color1:       #a54242
-URxvt*color9:       #cc6666
-
-! green
-URxvt*color2:       #8c9440
-URxvt*color10:      #b5bd68
-
-! yellow
-URxvt*color3:       #de935f
-URxvt*color11:      #f0c674
-
-! blue
-URxvt*color4:       #5f819d
-URxvt*color12:      #81a2be
-
-! magenta
-URxvt*color5:       #85678f
-URxvt*color13:      #b294bb
-
-! cyan
-URxvt*color6:       #5e8d87
-URxvt*color14:      #8abeb7
-
-! white
-URxvt*color7:       #707880
-URxvt*color15:      #c5c8c6
 
 ! === rofi ===
 
@@ -122,38 +76,25 @@ rofi.modi:                           run
 rofi.sidebar-mode:                   false
 rofi.terminal:                       termite
 rofi.ssh-client:                     ssh
-rofi.ssh-command:                    {terminal} -e "{ssh-client} {host}"
+rofi.ssh-command:                    {terminal} -e {ssh-client} {host}
 rofi.opacity:                        30
 rofi.width:                          30
 rofi.lines:                          5
 rofi.columns:                        1
 rofi.font:                           Inconsolata 15
-rofi.fg:                             #5294E2
-rofi.bg:                             #5d729f
-rofi.fg-active:                      #34405a
-rofi.fg-urgent:                      #34405a
-rofi.hlfg-active:                    #5e73a0
-rofi.hlfg-urgent:                    #5e73a0
-rofi.bg-active:                      #34405a
-rofi.bg-urgent:                      #34405a
-rofi.hlbg-active:                    #5d729f
-rofi.hlbg-urgent:                    #5d729f
-rofi.bgalt:                          #5671a0
-rofi.hlfg:                           #34405a
-rofi.hlbg:                           #34405a
-rofi.bc:                             #789ee1
+
 ! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
-rofi.color-normal: #353944,  #FFFFFF,  #353944,  #5294E2,  #FFFFFF
+rofi.color-normal: #2d2d2d,  #d3d0c8,  #2d2d2d,  #ffcc66,  #2d2d2d
 
 !                  'background', 'border'
-rofi.color-window: #353944,      #353944, #353944
+rofi.color-window: #2d2d2d,      #2d2d2d, #2d2d2d
 rofi.bw:                             10
-rofi.location:                       7
+rofi.location:                       0
 rofi.padding:                        20
 rofi.levenshtein-sort:               true
 rofi.case-sensitive:                 false
 rofi.fuzzy:                          false
-rofi.line-margin:                    2
+rofi.line-margin:                    0
 rofi.separator-style:                false
 rofi.hide-scrollbar:                 true
 rofi.markup-rows:                    false

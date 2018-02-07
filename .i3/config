@@ -323,19 +323,6 @@ bar {
 	bindsym button5 nop
 	font xft:Noto Sans 10.5
 	strip_workspace_numbers yes
-
-    colors {
-        background #283339
-        statusline #F9FAF9
-        separator  #454947
-
-#                      border  backgr. text
-        focused_workspace  $term_background $term_background #283339
-        active_workspace   #283339 #353836 #FDF6E3
-        inactive_workspace #283339 #283339 $term_background
-        binding_mode       #16a085 #2C2C2C #F9FAF9
-        urgent_workspace   #16a085 #FDF6E3 #E5201D
-    }
 }
 
 # hide/unhide i3status bar
@@ -343,12 +330,13 @@ bindsym $mod+m bar mode toggle
 
 # window colors
 #  class                 border   backgr.  text  indicator  child_border
-client.focused          #4c7899  #285577  #ffffff  #2e9ef4   #285577
+client.focused          $term_color7  $term_color7  $term_color0 $term_color7  $term_color7
 client.focused_inactive #81c2d6  #5f676a  #ffffff  #484e50   #0b6e48
-client.unfocused        #c9cabb  #222222  #888888  #292d2e   #222222
+client.unfocused        $term_color0  $term_color0  $term_color0 $term_color7  $term_color0
 client.urgent           #2f343a  #900000  #ffffff  #199475   #900000
-client.placeholder      #a2b4ba  #0c0c0c  #ffffff  #1793d0   #0c0c0c
-client.background #82abba
+client.placeholder      $term_color0  $term_color0  $term_color0 $term_color7  $term_color0
+
+client.background #ffffff
 
 #############################
 ### settings for i3-gaps: ###
@@ -406,9 +394,5 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-
-########################################################
-#polybar
-
 
 
